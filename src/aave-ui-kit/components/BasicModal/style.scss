@@ -1,0 +1,76 @@
+@import 'aave-ui-kit/_mixins/_screen-size.scss';
+@import 'aave-ui-kit/_mixins/_vars.scss';
+
+.ReactModal__Overlay {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7) !important;
+  position: relative;
+  z-index: 99;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: 32px 16px;
+}
+
+.ReactModal__Content {
+  background: #fff;
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  right: auto !important;
+  left: auto !important;
+  border: none !important;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+  padding: 24px;
+  margin: auto;
+}
+
+.BasicModal__dark.ReactModal__Content {
+  background: $white;
+}
+
+.BasicModal__close-wrapper {
+  position: absolute;
+  top: 14px;
+  right: 35px;
+  z-index: 5;
+}
+
+.BasicModal__close {
+  border: 0;
+  background: transparent;
+  position: fixed;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  margin: 0;
+  img {
+    width: 20px;
+    height: 20px;
+    @include respond-to(xl) {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.BasicModal__close:hover {
+  opacity: 0.7;
+}
+
+.BasicModal__close:active {
+  transform: scale(0.8);
+}
+
+@media only screen and (max-height: 400px) {
+  .ReactModal__Content.ReactModal__Content--after-open {
+    position: absolute !important;
+    top: 5% !important;
+    bottom: 5% !important;
+    display: block;
+    overflow: auto !important;
+  }
+}

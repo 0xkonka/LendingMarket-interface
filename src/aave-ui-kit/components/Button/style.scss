@@ -1,0 +1,102 @@
+@import 'aave-ui-kit/_mixins/_vars.scss';
+@import 'aave-ui-kit/_mixins/_screen-size.scss';
+
+.Button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  transition: $transition;
+  border-width: 1px;
+  border-style: solid;
+  font-size: $small;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  background: #7159ff;
+  &:hover {
+    background: #3cecd1;
+    color: #131313;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+  &:disabled {
+    cursor: not-allowed;
+    transition: none;
+    box-shadow: none;
+    &:after {
+      display: none;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  &__big {
+    width: 160px;
+    min-height: 40px;
+  }
+  &__medium {
+    width: 120px;
+    min-height: 40px;
+    font-size: $medium;
+    @include respond-to(xl) {
+    }
+  }
+  &__normal,
+  &__small {
+    font-size: $small;
+  }
+  &__normal {
+    width: 90px;
+    min-height: 30px;
+  }
+  &__small {
+    width: 70px;
+    min-height: 24px;
+    @include respond-to(sm) {
+      width: 120px;
+      min-height: 36px;
+      font-size: $small;
+    }
+  }
+
+  &__mobileBig {
+    @include respond-to(sm) {
+      width: 300px;
+      min-height: 50px;
+      font-size: $regular;
+    }
+  }
+
+  &__gradient {
+    border: none !important;
+    &:hover {
+      &:after {
+        opacity: 0.4;
+      }
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  * {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+}

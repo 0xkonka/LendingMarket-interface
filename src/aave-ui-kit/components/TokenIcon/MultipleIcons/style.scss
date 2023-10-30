@@ -1,0 +1,23 @@
+@import 'aave-ui-kit/_mixins/_vars.scss';
+@import 'aave-ui-kit/_mixins/_screen-size.scss';
+
+.MultipleIcons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 10px;
+  @include respond-to(sm) {
+    margin-right: 7px;
+  }
+
+  .TokenIcon img,
+  .MultipleIcons__separator.MultipleIcons__separator,
+  img {
+    margin-right: 0;
+  }
+  &__symbols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

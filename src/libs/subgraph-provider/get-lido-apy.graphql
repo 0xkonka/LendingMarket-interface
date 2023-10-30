@@ -1,0 +1,6 @@
+query GetLidoAPY() {
+  totalRewards(first: 1, orderBy: blockTime, orderDirection: desc) {
+    apr
+    blockTime
+  }
+}

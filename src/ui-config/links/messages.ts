@@ -1,0 +1,28 @@
+import { defineMessages } from 'react-intl';
+
+export default defineMessages({
+  markets: 'Markets',
+  dashboard: 'Dashboard',
+  deposit: 'Deposit',
+  borrow: 'Borrow',
+  manageRadiant: 'Manage',
+  addRdnt: 'Add RDNT to wallet',
+  riskDashboard: 'Risk dashboard',
+  buyRdnt: 'Buy',
+  bridge: 'Bridge',
+  migration: 'Migrate',
+  arbAirdrop: 'ARB Airdrop Claim',
+  faq: 'FAQ',
+  discussion: 'Discussion',
+  governance: 'Governance',
+  security: 'Security',
+  faucet: 'Faucet',
+  docs: 'Documentation',
+  loop: 'Loop',
+  status: 'Status',
+  voting: 'Voting',
+  discord: 'Discord',
+  twitter: 'Twitter',
+  telegram: 'Telegram',
+  youtube: 'Youtube',
+});

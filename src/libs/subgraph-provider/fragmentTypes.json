@@ -1,0 +1,6 @@
+{
+  "possibleTypes": {
+    "AssetTransaction": ["NewTransferAdded"],
+    "UserTransaction": ["Disqualified", "Locked", "Relocked", "Withdrawn"]
+  }
+}

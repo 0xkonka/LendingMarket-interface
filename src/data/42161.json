@@ -1,0 +1,203 @@
+{
+  "lendingPoolRewards": {
+    "success": true,
+    "data": {
+      "poolAPRs": [
+        {
+          "tokenAddress": "0x2E9B46867469350E4889c280f74Bfa55Ca44fcd4",
+          "apy": 0.05776358441159339,
+          "poolValue": 20164658.03100803,
+          "poolRewardsPerYear": 43842382.154181816,
+          "assetPrice": 1,
+          "allocPoint": 30
+        },
+        {
+          "tokenAddress": "0x5293c6CA56b8941040b8D18f557dFA82cF520216",
+          "apy": 0.009014796808202857,
+          "poolValue": 25841579.15229266,
+          "poolRewardsPerYear": 8768476.430836365,
+          "assetPrice": 1,
+          "allocPoint": 6
+        },
+        {
+          "tokenAddress": "0x4e75D4bc81D9AD1a1abc972a3dd53d581e1CE16b",
+          "apy": 0.07932458268193084,
+          "poolValue": 4303.75232767143,
+          "poolRewardsPerYear": 17536952.86167273,
+          "assetPrice": 1364.74,
+          "allocPoint": 12
+        },
+        {
+          "tokenAddress": "0x15b53d277Af860f51c3E6843F8075007026BBb3a",
+          "apy": 0.007090890209072883,
+          "poolValue": 8024.224210995576,
+          "poolRewardsPerYear": 2922825.4769454547,
+          "assetPrice": 1364.74,
+          "allocPoint": 2
+        },
+        {
+          "tokenAddress": "0x0e16bAE17C61789d8a96Ea6529d788B633C4c8B6",
+          "apy": 0.08146085793339068,
+          "poolValue": 118.556973,
+          "poolRewardsPerYear": 7307063.692363637,
+          "assetPrice": 20101,
+          "allocPoint": 5
+        },
+        {
+          "tokenAddress": "0x4cD44E6fCfA68bf797c65889c74B26b8C2e5d4d3",
+          "apy": 0.007731419209860679,
+          "poolValue": 249.83130451,
+          "poolRewardsPerYear": 1461412.7384727274,
+          "assetPrice": 20101,
+          "allocPoint": 1
+        },
+        {
+          "tokenAddress": "0x9C3A8644A9cA181b90094be98dC19496F6b38a24",
+          "apy": 0.055200525899493404,
+          "poolValue": 35168231.561955,
+          "poolRewardsPerYear": 73070636.92363636,
+          "assetPrice": 1,
+          "allocPoint": 50
+        },
+        {
+          "tokenAddress": "0xEf47CCC71EC8941B67DC679D1a5f78fACfD0ec3C",
+          "apy": 0.007920967526837075,
+          "poolValue": 49016862.412268,
+          "poolRewardsPerYear": 14614127.384727273,
+          "assetPrice": 1,
+          "allocPoint": 10
+        },
+        {
+          "tokenAddress": "0xf92d501e74bd1e4308E6676C38Ab4d84389d7Bf3",
+          "apy": 0.05584562947340111,
+          "poolValue": 48666777.573697,
+          "poolRewardsPerYear": 102298891.6930909,
+          "assetPrice": 1,
+          "allocPoint": 70
+        },
+        {
+          "tokenAddress": "0x805ba50001779CeD4f59CfF63aea527D12B94829",
+          "apy": 0.008142751477660462,
+          "poolValue": 66754507.625621,
+          "poolRewardsPerYear": 20459778.33861818,
+          "assetPrice": 1,
+          "allocPoint": 14
+        }
+      ]
+    },
+    "generatedAt": 1665081449901
+  },
+  "prices": {
+    "success": true,
+    "data": {
+      "tokenPrice": 0.02409457
+    },
+    "generatedAt": 1665358125111
+  },
+  "pool2Info": {
+    "success": true,
+    "data": {
+      "lpTokenPrice": 12.484863034252196,
+      "pool2RewardsPerSecond": 0.6990885,
+      "yearlyRewardsUSD": 585719.4119767294,
+      "totalLpStaked": 46120.133218131064,
+      "totalLpStakedUSD": 575803.5463498313,
+      "apr": 1.0172209179498066
+    },
+    "generatedAt": 1665081453099
+  },
+  "tokenStats": {
+    "success": true,
+    "data": {
+      "supplyLocked": 89239715.82585539,
+      "supplyLockedUSD": 2370877.0426005716,
+      "totalStaked": 52590122.901698045,
+      "totalStakedUSD": 1397188.616092092,
+      "circulatingSupply": 29897395.04066227,
+      "marketCapUSD": 4562365.0004094085,
+      "burned": 0
+    },
+    "generatedAt": 1665081484783
+  },
+  "circulatingSupply": 25254611.741405845,
+  "dailyFees": {
+    "success": true,
+    "data": {
+      "totalPlatformFees": 3842910.8845063807,
+      "asset": {
+        "RDNT": 60.98968987814446,
+        "rWBTC": 1.5746762449075926,
+        "rDAI": 8.015252173978576,
+        "rUSDT": 10.88003437763053,
+        "rUSDC": 13.33181514464912,
+        "rWETH": 5.2085321806897165
+      }
+    },
+    "generatedAt": 1665358348877
+  },
+  "tokenStakingRewards": {
+    "success": true,
+    "data": {
+      "platformFeesPerSecondUSD": 0.08172742153839822,
+      "penaltyFeesPerSecondUSD": 0.04883997725220075,
+      "totalRevenuePerSecondUSD": 0.130567398790599,
+      "totalPlatformFees": 11281.023255507753,
+      "asset": {
+        "RDNT": 37.40595102957454,
+        "rWBTC": 1.1307950018188075,
+        "rDAI": 13.845960055090664,
+        "rUSDT": 20.096999754814853,
+        "rUSDC": 24.504438217963518,
+        "rWETH": 3.0158559407376146
+      },
+      "stakingAPR": 0,
+      "lockingAPR": 1.8593756169786326,
+      "rewardTokens": [
+        {
+          "symbol": "DAI",
+          "decimals": 18,
+          "price": 1,
+          "rToken": "0x5293c6CA56b8941040b8D18f557dFA82cF520216"
+        },
+        {
+          "symbol": "WETH",
+          "decimals": 18,
+          "price": 1318.75,
+          "rToken": "0x15b53d277Af860f51c3E6843F8075007026BBb3a"
+        },
+        {
+          "symbol": "WBTC",
+          "decimals": 8,
+          "price": 19414.17,
+          "rToken": "0x4cD44E6fCfA68bf797c65889c74B26b8C2e5d4d3"
+        },
+        {
+          "symbol": "USDT",
+          "decimals": 6,
+          "price": 1,
+          "rToken": "0xEf47CCC71EC8941B67DC679D1a5f78fACfD0ec3C"
+        },
+        {
+          "symbol": "USDC",
+          "decimals": 6,
+          "price": 1,
+          "rToken": "0x805ba50001779CeD4f59CfF63aea527D12B94829"
+        },
+        {
+          "symbol": "RDNT",
+          "decimals": 18,
+          "price": 0.02409457
+        }
+      ],
+      "lockingAPRPerToken": {
+        "RDNT": 0.6955171327428767,
+        "rWBTC": 0.021025726541831994,
+        "rDAI": 0.2574484052009571,
+        "rUSDT": 0.37367871318528295,
+        "rUSDC": 0.455629549302407,
+        "rWETH": 0.05607609000527677
+      }
+    },
+    "generatedAt": 1665358365772
+  }
+}

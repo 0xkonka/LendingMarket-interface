@@ -1,0 +1,40 @@
+FROM node:16 as build-deps
+WORKDIR /app
+
+ADD package.json package-lock.json /app/
+RUN npm ci
+
+# general ETH config
+ARG VITE_SUPPORTED_ETHEREUM_NETWORKS
+ARG VITE_DEFAULT_ETHEREUM_NETWORK
+ARG VITE_RATES_HISTORY_ENDPOINT
+
+# gitlab integration
+ARG VITE_CI_PROJECT_ID
+ARG VITE_CI_MERGE_REQUEST_IID
+ARG VITE_CI_PROJECT_PATH
+ARG VITE_CI_COMMIT_REF_NAME
+
+# analitics and metrics
+ARG VITE_GTM_ID
+ARG VITE_SENTRY_DSN
+
+# Payments
+ARG VITE_TRANSAK_API_KEY
+ARG VITE_ONRAMP_API_KEY
+
+# Wallets
+ARG VITE_FORTMATIC_KEY_MAINNET
+ARG VITE_FORTMATIC_KEY_TESTNET
+ARG VITE_AUTHEREUM_API_KEY
+ARG VITE_PORTIS_DAPP_ID
+
+ADD ./ /app
+
+FROM nginx:alpine
+
+COPY default.conf /etc/nginx/conf.d/
+COPY --from=build-deps /app/build/ /server_root/
+
+ARG NGINX_MODE=prod
+COPY robots.txt.$NGINX_MODE /server_root/robots.txt

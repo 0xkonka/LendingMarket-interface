@@ -1,0 +1,28 @@
+query UserHistory($id: String!, $first: Int, $skip: Int) {
+  userTransactions(
+    first: $first
+    skip: $skip
+    where: {
+      or: [
+        { action: Relocked, user: $id }
+        { action: Disqualified, user: $id }
+      ]
+    }
+    orderBy: timestamp
+    orderDirection: desc
+  ) {
+    id
+    timestamp
+    ... on Disqualified {
+      timestamp
+    }
+    ... on Relocked {
+      amount
+      lockIndex
+    }
+  }
+}
+
+query ConnectionStatus {
+  isDisconnected @client
+}

@@ -1,0 +1,33 @@
+@import 'aave-ui-kit/_mixins/_screen-size.scss';
+@import 'aave-ui-kit/_mixins/_vars.scss';
+
+.AnimationArrow {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 5px;
+  i {
+    position: absolute;
+    display: inline-block;
+    transition: $transition;
+
+    &:first-of-type {
+      left: 0;
+      transform: rotate(45deg);
+    }
+    &:last-of-type {
+      right: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__active {
+    i {
+      &:first-of-type {
+        transform: rotate(-45deg);
+      }
+      &:last-of-type {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+query NewTransfers($first: Int, $skip: Int, $timestamp: Int!) {
+  newTransferAddeds(
+    orderBy: timestamp
+    orderDirection: desc
+    first: $first
+    skip: $skip
+    where: { timestamp_gte: $timestamp }
+  ) {
+    id
+    lpUsdValue
+    asset {
+      id
+    }
+  }
+}
+
+query LastDayTransfer($lastTimeStamp: Int!) {
+  newTransferAddeds(
+    orderBy: timestamp
+    orderDirection: asc
+    where: {timestamp_gte: $lastTimeStamp}
+    first: 1
+  ) {
+    id
+    lpUsdValue
+    timestamp
+    totalTransferred
+    assetTotals{
+      id
+      symbol
+      totalTransferred
+    }
+  }
+  totalTransferreds {
+    id
+    totalTransferred
+  }
+}

@@ -1,0 +1,5 @@
+query UsdTransfereds {
+  usdTransfereds {
+    totalLpUsdTransfered
+  }
+}

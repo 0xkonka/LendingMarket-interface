@@ -1,0 +1,80 @@
+@import 'aave-ui-kit/_mixins/_vars.scss';
+@import 'aave-ui-kit/_mixins/_screen-size.scss';
+
+.DropdownWrapper {
+  position: relative;
+  z-index: 2;
+
+  &__bottom {
+    .DropdownWrapper__content {
+      transform-origin: 100% 0;
+      top: calc(100% + 10px);
+    }
+  }
+
+  &__top {
+    .DropdownWrapper__content {
+      transform-origin: 0 100%;
+      bottom: calc(100% + 10px);
+    }
+  }
+
+  &__left {
+    .DropdownWrapper__content {
+      left: 0;
+    }
+  }
+
+  &__right {
+    .DropdownWrapper__content {
+      right: 0;
+    }
+  }
+
+  &__center {
+    .DropdownWrapper__content {
+      left: 50%;
+      transform: translateX(-50%) scaleY(0);
+    }
+    .DropdownWrapper__contentVisible {
+      transform: translateX(-50%) scaleY(1);
+    }
+  }
+
+  &__icon {
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    z-index: 2;
+
+    &__up {
+      top: 14px;
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    &__down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+
+  &__content {
+    background: #fff;
+    position: absolute;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: $borderRadius;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__contentVisible {
+    height: auto;
+    opacity: 1;
+  }
+}

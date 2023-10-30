@@ -1,0 +1,12 @@
+@import 'aave-ui-kit/_mixins/_vars.scss';
+@import 'aave-ui-kit/_mixins/_screen-size.scss';
+
+.Timer {
+  font-size: $regular;
+  margin-right: 10px;
+  white-space: nowrap;
+  color: $darkBlue;
+  @include respond-to(xl) {
+    font-size: $small;
+  }
+}
